@@ -14,7 +14,7 @@ class EmailParser
 		# @email = @email.gsub(/[\s,]/ ," ").split
 		
 		@email = @email.split(/[\s,']/)
-		@emails.uniq
+		@email.uniq
 	end
   
 end
