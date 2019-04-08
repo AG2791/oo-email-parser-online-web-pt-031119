@@ -7,4 +7,8 @@ class EmailParser
   attr_accessor :email 
   emaail_list =[]
   
+  def inititialize(email)
+    @email = email
+  end
+  
 end
