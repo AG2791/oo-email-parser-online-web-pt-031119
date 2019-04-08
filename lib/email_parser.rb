@@ -9,7 +9,7 @@ class EmailParser
   emaail_list = []
   
   def self.parse(email_list)
-    email_list.split(/[ ,]/)
+    email_list.split(/[\s,]/)
   end
   
 end
