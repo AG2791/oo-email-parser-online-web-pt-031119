@@ -6,15 +6,13 @@
 class EmailParser
   attr_accessor :email 
   
-  
-  def initiil
-    emails.split(/[\s,]/)
-  end
-  
-  	def initialize(emails)
+  def initialize(emails)
 		@emails= emails
 	end
-	
+  def initialize(emails)
+    emails.split(/[\s,]/)
+  end
+ 
 	def parse
 		@emails = @emails.gsub(/[\s,]/ ," ").split
 		# @email is an array now
